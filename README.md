@@ -13,6 +13,12 @@ We'd like to build an app where users can put their tokens (USDT) to the project
 - Add same form to withdraw tokens (instead of account belance we should show balance on the contract).
 - Add list of transactions (to receive transactions use contract Events). Each item of the list should contain: sender address, amount of tokens, action (provide / withdraw), date (MM/DD/YYYY HH:mm:ss). Show only last 10 transactions.
 
+### Note!
+
+By default USDT Contract won't be able to transfer tokens from user's account to TestTask Contract. Users should allow USDT Contract to transfer their tokens. To do this you need to add approve functionality. You can read about approve and allowance [here](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-) and [here](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-).
+
+In the app it should be designed as double transaction sign with MetaMask: 1) user signs approve transaction 2) user signs provide transaction. This logic required only for "provide" tokens method.
+
 <br />
 
 ## Example how forms might look
@@ -60,8 +66,6 @@ address: 0x18696aE68855e95674765d4Dbbc54dF6F8a66290
 Read `balanceOf(address)`<br />
 Read `allowance(address)`<br />
 Write `approve(address, amount)`<br />
-
-**Note:** you can read about approve and allowance [here](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-) and [here](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-allowance-address-address-).
 
 <br />
 
