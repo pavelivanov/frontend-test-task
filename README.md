@@ -2,7 +2,7 @@
 
 ## Business story
 
-We'd like to build an app where users can put their tokens (USDT) to the project's contract for future rewards. Users should be able to connect their wallets and add / remove tokens using a form in the app. We'd like to show users a list of last 10 transactions from all users. Also connected user should be able to see his account balance and balance of tokens that he provided to the contract.
+We'd like to build an app where users can stake their tokens (USDT) to receive rewards. Users should be able to connect their wallets and add / remove tokens using a form in the app. We'd like to show users a list of last 10 transactions from all users. Also connected user should be able to see his account balance and balance of provided tokens.
 
 <br />
 
@@ -39,6 +39,8 @@ In the app it should be designed as double transaction sign with MetaMask: 1) us
 
 ## TestTask Contract
 
+This is "Staker" contract. It provides functionality to provide and withdraw liquidity.
+
 ```
 address: 0x02cB34d293e74D3328321c0E32898e42D8594895
 ```
@@ -56,6 +58,8 @@ Event `Provide(address from, uint amount)`
 <br />
 
 ## USDT Contract
+
+This is regular ERC20 contract.
 
 ```
 address: 0x18696aE68855e95674765d4Dbbc54dF6F8a66290
