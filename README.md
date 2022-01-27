@@ -11,7 +11,7 @@ We'd like to build an app where users can stake their tokens (USDT) to receive r
 - Add a button to connect wallet. When connected the button should be replaced with block containing account address. Optional: add "disconnect" button that disconnects
 - Add a form (title: Provide tokens) with input (placeholder: Amount), account balance and submit button (title: Submit). Using this form user should be able to put tokens 
 - Add same form to withdraw tokens (instead of account belance we should show balance on the contract).
-- Add list of transactions (to receive transactions use contract Events). Each item of the list should contain: sender address, amount of tokens, action (provide / withdraw), date (MM/DD/YYYY HH:mm:ss). Show only last 10 transactions.
+- Add block with transactions history. Each row should contain: sender address, amount of tokens, action (provide / withdraw), date (MM/DD/YYYY HH:mm:ss). Show only last 10 transactions (to receive transactions use contract Events).
 
 ### Note!
 
